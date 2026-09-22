@@ -1,0 +1,132 @@
+/* ==========================================================
+   Online Assignment Submission System - Custom Styles
+   Clean, modern, responsive educational dashboard UI
+   ========================================================== */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #475569;
+    --success: #16a34a;
+    --warning: #d97706;
+    --danger: #dc2626;
+    --bg-light: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Badges */
+.badge-teacher {
+    background-color: #ea580c;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.badge-student {
+    background-color: #16a34a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Cards */
+.card-custom {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-custom:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header-custom {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    font-weight: 600;
+}
+
+/* Stat Cards */
+.stat-card {
+    border-radius: 12px;
+    padding: 1.25rem;
+    border: 1px solid #e2e8f0;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Tables */
+.table-custom th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.table-custom td {
+    vertical-align: middle;
+}
+
+/* File Upload Area */
+.drop-zone {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    background: #f8fafc;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.drop-zone:hover {
+    border-color: var(--primary);
+    background: #eff6ff;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 1.5rem 0;
+}
